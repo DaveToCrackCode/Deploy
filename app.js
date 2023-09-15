@@ -418,7 +418,7 @@ app.post("/resendOtpVerificationcode", async (req,res)=>{
 // Connet_to_mongoose();
 
 const start = async()=>{
-   await mongoose.connect(`mongodb+srv://DaveToCrackCode:Bahubali@123@cluster0.f1xuthy.mongodb.net/?retryWrites=true&w=majority`)
+   await mongoose.connect('mongodb+srv://DaveToCrackCode:Bahubali@123@cluster0.f1xuthy.mongodb.net/?retryWrites=true&w=majority')
 app.listen(process.env.PORT,()=>{
     console.log(`Your Server Is Running at Port : ${process.env.PORT}`);
 
