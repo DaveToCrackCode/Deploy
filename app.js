@@ -403,9 +403,7 @@ app.post("/resendOtpVerificationcode", async (req,res)=>{
         }
     } catch (error) {
         console.log(error);
-        // res.json({
-        //     message : error.message,
-        // })
+        
         const message="Error while sending the otp! Please try again";
   const useremail=""
     res.render('resendOtpVerificationcode', {  message });
