@@ -86,7 +86,7 @@ transporter.verify((error,success)=>{
 app.get("/",(req,res)=>{
   const message="";
 //   console.log(req.body);
-    res.render('index2', {  message });
+    res.render('index2');
 })
 app.get("/verifyotp",(req,res)=>{
     const message="";
