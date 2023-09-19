@@ -7,7 +7,7 @@ const User = require("./models/user");
 const UserOtp= require("./models/UserOtpVerif");
 const mongoose= require('mongoose');
 const Adm= require("./models/adm");
-// const Connet_to_mongoose = require('./connecttomongo');
+const Connet_to_mongoose = require('./connecttomongo');
 const MockProfile = require('./models/mock_profile');
 // const { default: mongoose } = require('mongoose');
 const app= express();
@@ -414,10 +414,10 @@ app.post("/resendOtpVerificationcode", async (req,res)=>{
 
 
 
-// Connet_to_mongoose();
+Connet_to_mongoose();
 
 const start = async()=>{
-   await mongoose.connect('mongodb+srv://DaveToCrackCode:Bahubali123@cluster0.f1xuthy.mongodb.net/?retryWrites=true&w=majority');
+//    await mongoose.connect('mongodb+srv://DaveToCrackCode:Bahubali123@cluster0.f1xuthy.mongodb.net/?retryWrites=true&w=majority');
 app.listen(process.env.PORT,()=>{
     console.log(`Your Server Is Running at Port : ${process.env.PORT}`);
 
